@@ -1,0 +1,17 @@
+<div>
+    <mat-toolbar color= "primary">Grocery list manager</mat-toolbar>
+    <form layout class="form">
+        <div layout="row" flex>
+            <mat-form-field flex class="mat-icon-float mat-block mat-title">
+                <mat-placeholder>I need to buy</mat-placeholder>
+                <input matInput name="task" [(ngModel)]="task"/>
+            </mat-form-field>
+            <button mat-raised-button color= "accent"(click)="onClick()">Add to list</button>
+        </div> 
+    </form>
+    <mat-selection-list #grocery>
+        <mat-list-option *ngFor="let task of tasks" checkboxPosition="before" >
+            {{ task.name }} 
+        </mat-list-option>
+    </mat-selection-list>
+</div> 

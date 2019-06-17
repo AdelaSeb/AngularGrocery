@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+/* @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css'); */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.mat-raised-button {
+    background-color: burlywood;
+    font-family: "Roboto", "Helvetica Neue", "sans-serif" !important;
+    font-size: 14px !important;
+}
+
+body {
+    margin: 0;
+}
+
+mat-list-option[aria-selected="true"] {
+    /* background: gray; */
+    text-decoration:line-through;
+  }
+
+ .form {
+    margin-left: 16px;
+ }
